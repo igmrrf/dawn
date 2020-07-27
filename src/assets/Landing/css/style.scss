@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Cairo&display=swap);
+@import "config";
+* {
+  margin: 0;
+  padding: 0;
+  a {
+    color: set-text-color($primary-background);
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+  }
+  ul li,
+  ol li {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $tertiary-color;
+    display: inline-block;
+    margin-bottom: 9px;
+    text-transform: capitalize;
+    margin-top: -9px;
+    position: relative;
+    z-index: 2;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: set-text-color($primary-background);
+    font-weight: bold;
+  }
+}
+.whiteBtn {
+  @include whiteBtn();
+}
+.brownBtn {
+  @include brownBtn();
+}
+@import "header";
+@import "banner";
+@import "statistics";
+@import "about";
+@import "./services";
+@import "features";
+@import "investment";
+@import "testimony";
+@import "newsletter";
+@import "transactions";
+@import "referral";
+@import "footer";
+@import "register";
+@import "login";
+@import "message";
+@import "partners";
+@import "review";
+@import "faq";
+@import "steps";
+@import "mediaQueries";

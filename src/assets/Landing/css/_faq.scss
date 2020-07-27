@@ -1,0 +1,15 @@
+.faq {
+	background: $primary-background;
+	color: $secondary-color;
+	min-height: 70vh;
+	padding: 30px 0;
+	
+	.accordion-card {
+	   background: $primary-background;
+		color: set-text-color($primary-background);
+	}
+	.acc-toggle {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,25 @@
+.Cards {
+	padding: 20px 0px 20px;
+	padding: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.single-card {
+		@include singleCard();
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.Cards {
+		padding: 0;
+		margin: -30px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.Cards {
+		margin: auto;
+		justify-content: center;
+	}
+}

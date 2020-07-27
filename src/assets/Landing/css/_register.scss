@@ -1,0 +1,43 @@
+.register {
+ background: $primary-background;
+
+	padding: 120px 0 80px;
+	width: 100%;
+	min-height: 70vh;
+
+	.register-card {
+		box-shadow: 5px 2px 5px $primary-color;
+		padding: 30px 10px;
+		.form-control {
+			border: none;
+			box-shadow: 1px 1px 1px 1px $primary-color;
+		}
+	}
+	.register-img-card {
+		.register-img {
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: 760px) {
+	.register {
+		.register-img-card {
+			display: block;
+			height: 660px;
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+			.register-img {
+				display: block;
+				height: 100%;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+.haveAccount {
+	@include haveAccount;
+}

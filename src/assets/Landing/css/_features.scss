@@ -1,0 +1,16 @@
+.features {
+  padding: 100px 0;
+  .single-feature {
+    box-shadow: 4px 4px 10px $secondary-color;
+    padding: 15px 15px;
+    min-height: 300px;
+    margin: 10px 10px;
+    color: $text-black;
+
+    svg {
+      font-size: 100px;
+
+      color: $tertiary-color;
+    }
+  }
+}

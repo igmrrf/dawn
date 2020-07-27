@@ -1,0 +1,32 @@
+.deposit {
+	min-height: 100vh;
+	.account-cards {
+		margin-top: 30px;
+	}
+}
+.account-cards {
+	margin-top: 30px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-danger {
+	color: #ff6868 !important;
+}
+.add-wallet-details {
+   background: $primary-background;
+	color: set-text-color($primary-background);
+	width: 100%;
+	border: none;
+}
+.pt-card {
+	margin-top: 30px;
+}
+.token-overview-title {
+	font-size: small;
+	font-weight: lighter;
+	color: set-text-color($primary-background);
+}
+.bonus-on-sale {
+	color: set-text-color($primary-background);
+	font-weight: bolder;
+}

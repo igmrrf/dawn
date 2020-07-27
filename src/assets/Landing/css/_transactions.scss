@@ -1,0 +1,13 @@
+.transaction {
+	padding: 120px 0 80px;
+	background: $primary-background;
+	color: set-text-color($primary-color);
+
+	table {
+ background: $primary-background;
+		thead.table-head {
+			font-weight: bolder;
+			font-size: larger;
+		}
+	}
+}

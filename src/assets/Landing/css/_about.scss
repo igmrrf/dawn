@@ -1,0 +1,21 @@
+.about {
+	padding: 120px 0;
+ background: $primary-background;
+	min-height: 70vh;
+	.part-img {
+		height: 100%;
+	}
+	.part-text {
+		color: set-text-color($primary-background);
+
+		.text {
+			display: block;
+			width: 100%;
+		color: set-text-color($primary-background);
+			height: 50vh;
+			overflow-y: hidden;
+			white-space: normal;
+			text-overflow: ellipsis;
+		}
+	}
+}

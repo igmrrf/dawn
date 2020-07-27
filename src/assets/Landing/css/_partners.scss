@@ -1,0 +1,13 @@
+.partners {
+	@include component;
+	.partner-image {
+		margin-top: 10px;
+		width: 200px;
+		height: 100px;
+		margin-right: 10px;
+
+		&:last-child {
+		 background: $primary-background;
+		}
+	}
+}

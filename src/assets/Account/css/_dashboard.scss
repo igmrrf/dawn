@@ -1,0 +1,16 @@
+.dashboard {
+  min-height: 100vh;
+  h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(248, 6, 6), rgb(60, 71, 119));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.welcome-text {
+  color: set-text-color($primary-background);
+  font-weight: 800;
+  
+  background: $primary-background;
+}

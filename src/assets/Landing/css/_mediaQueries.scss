@@ -1,0 +1,38 @@
+//Media Query
+
+//Small Screen Query
+@include mediaSm {
+  .statics {
+    .single-statics {
+      margin-top: 20px;
+    }
+  }
+}
+
+//Medium Screen Query
+@include mediaMd {
+  .banner .banner-content .part-text {
+    width: 80vw;
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .haveAccount {
+    padding: 0;
+  }
+}
+
+//Large
+@include mediaLg {
+}
+
+@include mediaXl {
+}

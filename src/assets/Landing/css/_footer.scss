@@ -1,0 +1,12 @@
+.footer {
+  background: $tertiary-background;
+  .copyright {
+    text-align: center;
+    margin: 0;
+    padding: 17px 0 18px;
+    color: set-text-color($tertiary-background);
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+}

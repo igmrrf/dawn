@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* ul li,
+* ol li {
+  list-style: none;
+}
+
+.glowBtn:hover {
+  color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+.account-header {
+  background: #ffffff;
+}
+
+.account-header h2 {
+  font-size: 3rem;
+}
+
+.account-header .profileBtn {
+  display: none;
+}
+
+.account-header .profileBtn button {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.account-header .hover-main {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.account-header .hover-main .hover-sub {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  z-index: 10;
+  right: 8%;
+  top: 50px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.account-header .hover-main:hover {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.account-header .hover-main:hover .hover-sub {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #ffffff;
+}
+
+.topNav {
+  margin: 0;
+  background: #ffffff;
+}
+
+.topNav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topNav .nav-links .nav-link {
+  font-weight: 400;
+  color: #111111;
+  font-size: 1.1rem;
+}
+
+.topNav .nav-links .nav-link .nav-icon {
+  color: #111111;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.topNav .withdraw {
+  padding: 0 10px;
+  background: #111111;
+  border-radius: 5px;
+}
+
+.topNav .withdraw .nav-link {
+  color: #111111;
+}
+
+.topNav .withdraw .nav-link .nav-icon {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .account-header h2 {
+    font-size: 1.5rem;
+    margin-left: 40px;
+  }
+  .topNav {
+    position: absolute;
+    z-index: 100;
+    top: 0%;
+  }
+  .topNav .nav-links {
+    height: 80vh;
+    padding-right: 10px;
+    min-width: 70vw;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    padding: 20px 0px;
+  }
+  .topNav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 2px solid #fff;
+    background: radial-gradient(#4d479b, #25294d);
+  }
+  .topNav .nav-link:hover {
+    -webkit-box-shadow: 2px 2px 2px 2px #47c5ff;
+            box-shadow: 2px 2px 2px 2px #47c5ff;
+  }
+  .topNav .nav-link .nav-icon {
+    color: #111111;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .topNav .navbar-toggler {
+    padding: 0;
+    margin-top: 5px;
+    margin-right: -5px;
+    border: none;
+    background: transparent;
+  }
+  .topNav .navbar-toggler .navbar-toggler-icon {
+    width: 30px;
+    color: #111111;
+  }
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#f80606, #3c4777);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-text {
+  color: #111111;
+  font-weight: 800;
+  background: #ffffff;
+}
+
+.deposit {
+  min-height: 100vh;
+}
+
+.deposit .account-cards {
+  margin-top: 30px;
+}
+
+.account-cards {
+  margin-top: 30px;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-danger {
+  color: #ff6868 !important;
+}
+
+.add-wallet-details {
+  background: #ffffff;
+  color: #111111;
+  width: 100%;
+  border: none;
+}
+
+.pt-card {
+  margin-top: 30px;
+}
+
+.token-overview-title {
+  font-size: small;
+  font-weight: lighter;
+  color: #111111;
+}
+
+.bonus-on-sale {
+  color: #111111;
+  font-weight: bolder;
+}
+
+.settings {
+  min-height: 100vh;
+}
+
+.wallet-settings {
+  min-height: 65vh;
+}
+
+.password-settings {
+  min-height: 65vh;
+}
+
+.transactions {
+  min-height: 100vh;
+}
+
+.withdrawal {
+  min-height: 100vh;
+}
+
+.account-footer {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */

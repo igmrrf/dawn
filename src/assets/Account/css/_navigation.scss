@@ -1,0 +1,117 @@
+.account-header {
+ background: $primary-background;
+	h2 {
+		font-size: 3rem;
+	}
+	.profileBtn {
+		display: none;
+		button {
+			background: transparent;
+			border-radius: 10px;
+		}
+	}
+	.hover-main {
+		@include easeOut;
+		.hover-sub {
+			display: none;
+			position: absolute;
+			padding: 0 20px;
+			border-radius: 10px;
+			background: $primary-background;
+			z-index: 10;
+			right: 8%;
+			top: 50px;
+			@include easeOut;
+		}
+		&:hover {
+			@include easeOut;
+			.hover-sub {
+				margin-top: 10px;
+				display: flex;
+				flex-direction: column;
+				height: 80px;
+				justify-content: space-around;
+				background: $primary-background;
+			}
+		}
+	}
+}
+
+.topNav {
+	margin: 0;
+   background: $primary-background;
+
+	.nav-links {
+		display: flex;
+
+		.nav-link {
+			font-weight: 400;
+			color: set-text-color($primary-background);
+			font-size: 1.1rem;
+			.nav-icon {
+				color: set-text-color($primary-background);
+				font-size: 1.5rem;
+				margin-right: 10px;
+			}
+		}
+	}
+	.withdraw {
+		padding: 0 10px;
+		background: $secondary-color;
+		border-radius: 5px;
+		.nav-link {
+			color: set-text-color($primary-background);
+			.nav-icon {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+@include mediaSm {
+	.account-header {
+		h2 {
+			font-size: 1.5rem;
+			margin-left: 40px;
+		}
+	}
+	.topNav {
+		position: absolute;
+		z-index: 100;
+		top: 0%;
+		.nav-links {
+			height: 80vh;
+			padding-right: 10px;
+			min-width: 70vw;
+			@include easeOut;
+			padding: 20px 0px;
+		}
+		.nav-link {
+			font-size: 1.1rem;
+			padding: 10px 0;
+			margin: 10px 0;
+			padding-left: 10px;
+			border-left: 2px solid $white-color;
+			background: radial-gradient(rgb(77, 71, 155), rgb(37, 41, 77));
+			&:hover {
+				box-shadow: 2px 2px 2px 2px rgb(71, 197, 255);
+			}
+			.nav-icon {
+			color: set-text-color($primary-background);
+				font-size: 1.5rem;
+				margin-right: 10px;
+			}
+		}
+		.navbar-toggler {
+			padding: 0;
+			margin-top: 5px;
+			margin-right: -5px;
+			border: none;
+			background: transparent;
+
+			.navbar-toggler-icon {
+				width: 30px;
+				color: set-text-color($primary-background);
+			}
+		}
+	}
+}

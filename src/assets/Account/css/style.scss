@@ -1,0 +1,11 @@
+@import "../../Landing/css/config";
+@import "./wallet";
+@import "./navigation";
+@import "./dashboard";
+@import "./deposit";
+@import "./settings";
+@import "./transactions";
+@import "./withdrawal";
+.account-footer {
+  margin-top: 50px;
+}

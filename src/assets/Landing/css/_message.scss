@@ -1,0 +1,33 @@
+.message {
+	padding: 120px 0 80px;
+	background: $primary-background;
+	min-height: 70vh;
+	.message-card {
+		border: 1px solid $secondary-color;
+		padding: 30px 40px 39px;
+	}
+	.message-image-card {
+		.message-image {
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: 740px) {
+	.message {
+		.message-image-card {
+			display: block;
+			height: 470px;
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+			.message-image {
+				display: block;
+				height: 100%;
+				border-radius: 10px;
+			}
+		}
+	}
+}

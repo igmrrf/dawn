@@ -1,0 +1,28 @@
+@import "../../Landing/css/config";
+
+.Admin {
+	min-height: 100vh;
+ background: $primary-background;
+	background-size: cover;
+}
+@mixin singleCard() {
+	background: rgb(61, 142, 180);
+	margin: 10px;
+	font-size: larger;
+	font-weight: 400;
+	min-width: 250px;
+	min-height: 200px;
+color: set-text-color($primary-background);
+	border-radius: 30px;
+	padding: 20px 10px;
+	@include easeOut();
+	&:hover {
+		box-shadow: 0 5px 10px rgb(39, 19, 19);
+	}
+}
+@import "./navigation";
+@import "./dashboard";
+@import "./edit";
+@import "./email";
+@import "./investors";
+@import "./transactions";

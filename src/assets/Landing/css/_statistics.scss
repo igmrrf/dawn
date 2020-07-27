@@ -1,0 +1,41 @@
+.statics {
+  padding: 50px 50px;
+  min-height: 90vh;
+  background: url(../img/new/dg.png);
+  .single-statics {
+    .after-before {
+      text-align: center;
+      padding: 54px 0 33px;
+      position: relative;
+      border-bottom: 5px solid $white-color;
+      .part-img {
+        width: 100px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 26px;
+        font-size: 150px;
+        svg {
+          color: $tertiary-color;
+        }
+      }
+      .part-text {
+        color: $primary-color;
+        span {
+          display: block;
+        }
+        span.number {
+          font-size: 34px;
+          font-weight: 500;
+          margin-bottom: 6px;
+          margin-top: 5px;
+        }
+        span.title {
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: capitalize;
+          
+        }
+      }
+    }
+  }
+}

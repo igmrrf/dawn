@@ -1,0 +1,29 @@
+.steps {
+ background: $primary-background;
+	position: relative;
+	z-index: 2;
+	min-height: 70vh;
+	.steps-content {
+		text-align: center;
+		padding: 100px 0;
+		.single-step {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		p {
+			color: set-text-color($primary-background);
+			font-size: 16px;
+			line-height: 26px;
+			display: inline-block;
+			opacity: 0.8;
+		}
+		h1 {
+			font-size: 24px;
+			font-weight: 600;
+			color: set-text-color($primary-background);
+			text-transform: capitalize;
+			margin-bottom: 19px;
+			margin-top: -14px;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.banner {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  background: url(../img/new/bg.jpg);
+
+  .banner-content {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 50px;
+    background: url(../img/new/bg.jpg);
+    clip-path: circle(100vw at center);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    .part-text {
+      width: 50vw;
+    }
+    p {
+      font-size: 24px;
+      line-height: 26px;
+      display: inline-block;
+      opacity: 0.8;
+      font-weight: bolder;
+    }
+    h1 {
+      font-size: 70px;
+      font-weight: 800;
+      text-transform: capitalize;
+      margin-bottom: 19px;
+      margin-top: -14px;
+    }
+    .banner-buttons {
+      a {
+        @include brownBtn();
+      }
+    }
+  }
+}

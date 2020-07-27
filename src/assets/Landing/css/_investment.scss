@@ -1,0 +1,36 @@
+.plan {
+  padding: 120px 0 90px;
+  .single-plan {
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px $tertiary-color;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    background: $tertiary-background;
+    @include easeOut;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: capitalize;
+      padding: 24px 30px 23px;
+    }
+    .part-price {
+      position: relative;
+      z-index: 2;
+      padding: 15px 30px 19px;
+      span.percent {
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: -5px;
+      }
+    }
+
+    .glowBtn {
+      @include glowBtn;
+      a {
+        color: $tertiary-color;
+      }
+    }
+  }
+}
