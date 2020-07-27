@@ -6,9 +6,18 @@
   .logo {
     h2 {
       font-size: 2.5em;
-      background: -webkit-linear-gradient($primary-color, $tertiary-color);
+      background: $tertiary-color;
       background-clip: text;
       -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .navbar-light {
+    .navbar-toggler {
+      border: none;
+      background: $tertiary-color;
+      background-clip: text;
+      -webkit-background-clip: border-box;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -22,8 +31,8 @@
         transition: all 1s;
         margin: 0 5px;
         &:hover {
-           background: $primary-background;
-       color: set-text-color($primary-background);
+          background: $primary-background;
+          color: set-text-color($primary-background);
         }
       }
     }

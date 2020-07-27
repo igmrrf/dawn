@@ -114,9 +114,17 @@
 
 .header .logo h2 {
   font-size: 2.5em;
-  background: -webkit-linear-gradient(#ffffff, #1da1f2);
+  background: #1da1f2;
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .navbar-light .navbar-toggler {
+  border: none;
+  background: #1da1f2;
+  background-clip: text;
+  -webkit-background-clip: border-box;
   -webkit-text-fill-color: transparent;
 }
 
@@ -273,8 +281,8 @@
 }
 
 .services .single-service {
-  -webkit-box-shadow: 4px 4px 10px #111111;
-          box-shadow: 4px 4px 10px #111111;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 15px;
   min-height: 300px;
   margin: 10px 10px;
@@ -291,8 +299,8 @@
 }
 
 .features .single-feature {
-  -webkit-box-shadow: 4px 4px 10px #111111;
-          box-shadow: 4px 4px 10px #111111;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 15px;
   min-height: 300px;
   margin: 10px 10px;
@@ -310,8 +318,7 @@
 
 .plan .single-plan {
   text-align: center;
-  -webkit-box-shadow: 0px 0px 20px 5px #1da1f2;
-          box-shadow: 0px 0px 20px 5px #1da1f2;
+  border: none;
   border-radius: 10px;
   margin-bottom: 30px;
   padding-bottom: 15px;

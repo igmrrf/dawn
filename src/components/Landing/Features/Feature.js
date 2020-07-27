@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Feature(props) {
   return (
-    <div className="col-xl-4 col-lg-4 col-sm-8 col-md-6">
+    <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
       <div
         className="single-feature"
         data-aos={props.effect}
