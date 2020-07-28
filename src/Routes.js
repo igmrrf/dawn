@@ -18,7 +18,7 @@ import {
   Privacy,
   Recover,
   Verify,
-  Markets
+  Markets,
 } from "./containers/Landing";
 //Account Imports
 import Dashboard from "./containers/Account/Dashboard/DashboardPage";

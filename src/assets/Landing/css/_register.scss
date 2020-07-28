@@ -6,11 +6,11 @@
 	min-height: 70vh;
 
 	.register-card {
-		box-shadow: 5px 2px 5px $primary-color;
+		box-shadow: 5px 2px 5px $primary-background;
 		padding: 30px 10px;
 		.form-control {
 			border: none;
-			box-shadow: 1px 1px 1px 1px $primary-color;
+			box-shadow: 1px 1px 1px 1px $primary-background;
 		}
 	}
 	.register-img-card {

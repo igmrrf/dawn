@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 
 export default function Header(props) {
   return (
-    <Row>
+    <Row className="mt-4 ">
       <Col md={8} lg={6} data-aos-duration="2000" data-aos="fade-out">
         <div className="section-title">
           <h1>{props.heading}</h1>

@@ -1,17 +1,10 @@
 // $primary-background: linear-gradient(rgb(3, 68, 121), rgb(48, 24, 24));
-$primary-background: #ffffff;
-$secondary-background: #111111;
-$tertiary-background: #1da1f2;
-$primary-color: #ffffff;
-$secondary-color: #111111;
-$tertiary-color: #1da1f2;
-$brown-color: #771f1f;
-$white-color: #fff;
-$red-color: #ef0909;
-$black-color: #000;
-$text-white: #eeeeee;
-$text-black: #111111;
-$text-blue: #1da1f2;
+$primary-background: #192734;
+$brown: #771f1f;
+$dark: #8899a6;
+$white: #fff;
+$blue: #1da1f2;
+$black: #000;
 
 * {
   margin: 0;
@@ -21,6 +14,14 @@ $text-blue: #1da1f2;
   ol li {
     list-style: none;
   }
+  font-family: "Fira Code", "Roboto", sans-serif;
+}
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
 }
 
 @mixin component() {
@@ -28,40 +29,29 @@ $text-blue: #1da1f2;
   min-height: 70vh;
   background: $primary-background;
 }
-//Set Text Color
-@function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return $text-black;
-  } @else {
-    @return $text-white;
-  }
-}
 
 @mixin haveAccount() {
-  display: inline-block;
-  height: 50px;
-  padding: 0 10px;
-  border: 1px solid $brown-color;
-  color: set-text-color($white-color);
+  @include glowBtn();
+  padding: 0 0;
+  border: 1px solid $brown;
   line-height: 48px;
   border-radius: 10px;
-  font-weight: bolder;
-  min-width: 160px;
   text-align: center;
-  margin: 10px;
 }
-@mixin brownBtn() {
-  display: inline-block;
+@mixin blueBtn {
+  background: $blue;
+  color: $white;
+  padding: 15px 40px;
+  width: 200px;
   height: 50px;
-  padding: 0 15px;
-  border: 1px solid $brown-color;
-  background: $brown-color;
-  color: set-text-color($brown-color);
-  line-height: 48px;
-  border-radius: 10px;
-  width: 160px;
-  text-align: center;
-  margin: 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0px 0px 10px $blue;
+  }
 }
 
 @mixin glowBtn {
@@ -77,23 +67,19 @@ $text-blue: #1da1f2;
   margin-bottom: 30px;
 }
 
-.glowBtn:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
-}
+
 @mixin whiteBtn() {
-  display: inline-block;
-  height: 40px;
-  padding: 0 15px;
-  border: 1px solid $white-color;
-  color: set-text-color($primary-background);
-  line-height: 38px;
-  border-radius: 20px;
-  width: 140px;
-  text-align: center;
+  @include glowBtn();
+
   @include easeOut();
 }
-
+button {
+  @include blueBtn();
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
 @mixin easeOut() {
   transition: all 0.6s ease-in-out;
 }

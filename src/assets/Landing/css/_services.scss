@@ -1,16 +1,14 @@
 .services {
   padding: 100px 0;
   .single-service {
-   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 15px;
     min-height: 300px;
     margin: 10px 10px;
-    color: $text-black;
-
+    color: $black;
     svg {
       font-size: 100px;
-
-      color: $tertiary-color;
+      color: $blue;
     }
   }
 }

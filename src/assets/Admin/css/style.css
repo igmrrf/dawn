@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Fira Code", "Roboto", sans-serif;
 }
 
 * ul li,
@@ -10,42 +11,66 @@
   list-style: none;
 }
 
-.glowBtn:hover {
-  color: white;
-  -webkit-box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
-          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+button {
+  background: #1da1f2;
+  color: #fff;
+  padding: 15px 40px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 0px 10px #1da1f2;
+          box-shadow: 0px 0px 10px #1da1f2;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Admin {
   min-height: 100vh;
-  background: #ffffff;
+  background: #192734;
   background-size: cover;
 }
 
 .Admin-navigation {
   min-height: 10vh;
-  background: #ffffff;
+  background: #192734;
 }
 
 .Admin-navigation a button {
-  display: inline-block;
-  height: 40px;
-  padding: 0 15px;
-  border: 1px solid #fff;
-  color: #111111;
-  line-height: 38px;
-  border-radius: 20px;
-  width: 140px;
-  text-align: center;
+  background: #192734;
+  padding: 15px 40px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  color: #111111;
+  color: #fff;
 }
 
 .Dashboard {
   min-height: 90vh;
   padding: 120px, 20px, 80px;
-  background: #ffffff;
+  background: #192734;
 }
 
 .Cards {
@@ -72,7 +97,7 @@
   font-weight: 400;
   min-width: 250px;
   min-height: 200px;
-  color: #111111;
+  color: #fff;
   border-radius: 30px;
   padding: 20px 10px;
   -webkit-transition: all 0.6s ease-in-out;

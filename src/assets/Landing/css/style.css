@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Fira Code", "Roboto", sans-serif;
 }
 
 * ul li,
@@ -11,10 +12,32 @@
   list-style: none;
 }
 
-.glowBtn:hover {
-  color: white;
-  -webkit-box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
-          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+button {
+  background: #1da1f2;
+  color: #fff;
+  padding: 15px 40px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 0px 10px #1da1f2;
+          box-shadow: 0px 0px 10px #1da1f2;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
@@ -23,7 +46,7 @@
 }
 
 * a {
-  color: #111111;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -55,65 +78,63 @@
 .section-title {
   text-align: left;
   margin-bottom: 50px;
+  display: block;
 }
 
 .section-title h1 {
-  font-size: 30px;
+  font-size: 2.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   color: #1da1f2;
-  display: inline-block;
   margin-bottom: 9px;
   text-transform: capitalize;
-  margin-top: -9px;
-  position: relative;
-  z-index: 2;
 }
 
 .section-title h4 {
   font-size: 20px;
   line-height: 20px;
-  font-weight: 600;
-  color: #111111;
-  font-weight: bold;
+  color: #8899a6;
+  font-weight: lighter;
 }
 
 .whiteBtn {
-  display: inline-block;
-  height: 40px;
-  padding: 0 15px;
-  border: 1px solid #fff;
-  color: #111111;
-  line-height: 38px;
-  border-radius: 20px;
-  width: 140px;
-  text-align: center;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
+  background: #192734;
+  padding: 15px 40px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
 }
 
-.brownBtn {
-  display: inline-block;
+.haveAccount {
+  background: #192734;
+  padding: 15px 40px;
+  width: 200px;
   height: 50px;
-  padding: 0 15px;
-  border: 1px solid #771f1f;
-  background: #771f1f;
-  color: #eeeeee;
-  line-height: 48px;
-  border-radius: 10px;
-  width: 160px;
-  text-align: center;
-  margin: 10px;
+  border-radius: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
 }
 
 .header {
-  position: fixed;
-  width: 100vw;
+  position: static;
+  top: 0;
+  width: 99vw;
   z-index: 999;
-  background: #ffffff;
+  background: #192734;
 }
 
 .header .logo h2 {
-  font-size: 2.5em;
+  font-size: calc(1.5rem + 2vw);
   background: #1da1f2;
   background-clip: text;
   -webkit-background-clip: text;
@@ -121,6 +142,10 @@
 }
 
 .header .navbar-light .navbar-toggler {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  width: 15%;
+  height: 35px;
   border: none;
   background: #1da1f2;
   background-clip: text;
@@ -129,7 +154,7 @@
 }
 
 .header .navbar-nav .nav-item .nav-link {
-  color: #111111;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: calc(1em + 0.1vw);
@@ -139,26 +164,18 @@
 }
 
 .header .navbar-nav .nav-item .nav-link:hover {
-  background: #ffffff;
-  color: #111111;
+  background: #192734;
+  color: #fff;
 }
 
 .banner {
   position: relative;
-  min-height: 100vh;
-  padding-top: 15vh;
-  padding-bottom: 5vh;
-  background: url(../img/new/bg.jpg);
 }
 
 .banner .banner-content {
   text-align: center;
-  margin: 20px 0;
-  padding: 0 50px;
   background: url(../img/new/bg.jpg);
-  -webkit-clip-path: circle(100vw at center);
-          clip-path: circle(100vw at center);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +186,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .banner .banner-content .part-text {
@@ -192,18 +209,38 @@
   margin-top: -14px;
 }
 
+.banner .banner-content .banner-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .banner .banner-content .banner-buttons a {
-  display: inline-block;
+  background: #1da1f2;
+  color: #fff;
+  padding: 15px 40px;
+  width: 200px;
   height: 50px;
-  padding: 0 15px;
-  border: 1px solid #771f1f;
-  background: #771f1f;
-  color: #eeeeee;
-  line-height: 48px;
-  border-radius: 10px;
-  width: 160px;
-  text-align: center;
-  margin: 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  margin: 20px 20px;
+}
+
+.banner .banner-content .banner-buttons a:hover {
+  -webkit-box-shadow: 0px 0px 10px #1da1f2;
+          box-shadow: 0px 0px 10px #1da1f2;
 }
 
 .statics {
@@ -232,7 +269,7 @@
 }
 
 .statics .single-statics .after-before .part-text {
-  color: #ffffff;
+  color: #fff;
 }
 
 .statics .single-statics .after-before .part-text span {
@@ -254,22 +291,29 @@
 
 .about {
   padding: 120px 0;
-  background: #ffffff;
+  background: #fff;
   min-height: 70vh;
 }
 
-.about .part-img {
-  height: 100%;
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-content img {
+  width: 100%;
 }
 
 .about .part-text {
-  color: #111111;
+  color: #000;
 }
 
 .about .part-text .text {
-  display: block;
   width: 100%;
-  color: #111111;
   height: 50vh;
   overflow-y: hidden;
   white-space: normal;
@@ -286,7 +330,7 @@
   padding: 15px 15px;
   min-height: 300px;
   margin: 10px 10px;
-  color: #111111;
+  color: #000;
 }
 
 .services .single-service svg {
@@ -304,7 +348,7 @@
   padding: 15px 15px;
   min-height: 300px;
   margin: 10px 10px;
-  color: #111111;
+  color: #000;
 }
 
 .features .single-feature svg {
@@ -325,6 +369,8 @@
   background: #1da1f2;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+  -webkit-box-shadow: 0 0 20px #8899a6;
+          box-shadow: 0 0 20px #8899a6;
 }
 
 .plan .single-plan h3 {
@@ -347,7 +393,7 @@
 }
 
 .plan .single-plan .glowBtn {
-  background: #ffffff;
+  background: #192734;
   padding: 15px 40px;
   width: 200px;
   height: 50px;
@@ -367,16 +413,17 @@
 .testimonial {
   padding: 100px 0;
   position: relative;
-  background: #ffffff;
+  background: #192734;
 }
 
 .testimonial .single-testimonial {
+  background: #fff;
   text-align: center;
   margin: 30px 5px 3px;
   padding: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px #1da1f2;
-          box-shadow: 0px 0px 10px 0px #1da1f2;
+  -webkit-box-shadow: 0px 0px 10px #1da1f2;
+          box-shadow: 0px 0px 10px #1da1f2;
 }
 
 .testimonial .single-testimonial .user-profession {
@@ -394,7 +441,7 @@
 
 .calculate-profit {
   padding: 120px 0;
-  background: #ffffff;
+  background: #192734;
   position: relative;
   z-index: 2;
 }
@@ -408,12 +455,12 @@
 }
 
 .calculate-profit .calculate-area form .form-group .form-control {
-  background: #ffffff;
+  background: #192734;
   height: 50px;
   padding: 0 30px;
   border-radius: 50px;
   border-color: #771f1f;
-  color: #111111;
+  color: #fff;
   font-size: 15px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -423,8 +470,8 @@
 .calculate-profit .calculate-area form button {
   height: 50px;
   border: 1px solid #771f1f;
-  background: #ffffff;
-  color: #111111;
+  background: #192734;
+  color: #fff;
   border-radius: 50px;
   width: 100%;
   -webkit-transition: all 0.6s ease-in-out;
@@ -435,12 +482,12 @@
 
 .transaction {
   padding: 120px 0 80px;
-  background: #ffffff;
-  color: #111111;
+  background: #192734;
+  color: #1da1f2;
 }
 
 .transaction table {
-  background: #ffffff;
+  background: #192734;
 }
 
 .transaction table thead.table-head {
@@ -449,36 +496,36 @@
 }
 
 .footer {
-  background: #1da1f2;
+  background: #192734;
 }
 
 .footer .copyright {
   text-align: center;
   margin: 0;
   padding: 17px 0 18px;
-  color: #111111;
+  color: #fff;
   font-size: 16px;
   opacity: 0.8;
   line-height: 1.6;
 }
 
 .register {
-  background: #ffffff;
+  background: #192734;
   padding: 120px 0 80px;
   width: 100%;
   min-height: 70vh;
 }
 
 .register .register-card {
-  -webkit-box-shadow: 5px 2px 5px #ffffff;
-          box-shadow: 5px 2px 5px #ffffff;
+  -webkit-box-shadow: 5px 2px 5px #192734;
+          box-shadow: 5px 2px 5px #192734;
   padding: 30px 10px;
 }
 
 .register .register-card .form-control {
   border: none;
-  -webkit-box-shadow: 1px 1px 1px 1px #ffffff;
-          box-shadow: 1px 1px 1px 1px #ffffff;
+  -webkit-box-shadow: 1px 1px 1px 1px #192734;
+          box-shadow: 1px 1px 1px 1px #192734;
 }
 
 .register .register-img-card .register-img {
@@ -509,23 +556,28 @@
 }
 
 .haveAccount {
-  display: inline-block;
+  background: #192734;
+  padding: 15px 40px;
+  width: 200px;
   height: 50px;
-  padding: 0 10px;
+  border-radius: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  padding: 0 0;
   border: 1px solid #771f1f;
-  color: #111111;
   line-height: 48px;
   border-radius: 10px;
-  font-weight: bolder;
-  min-width: 160px;
   text-align: center;
-  margin: 10px;
 }
 
 .login {
   padding: 120px 0 80px;
   min-height: 70vh;
-  background: #ffffff;
+  background: #192734;
 }
 
 .login .login-card {
@@ -551,12 +603,12 @@
 
 .message {
   padding: 120px 0 80px;
-  background: #ffffff;
+  background: #192734;
   min-height: 70vh;
 }
 
 .message .message-card {
-  border: 1px solid #111111;
+  border: 1px solid #771f1f;
   padding: 30px 40px 39px;
 }
 
@@ -590,7 +642,7 @@
 .partners {
   padding: 120px 0 80px;
   min-height: 70vh;
-  background: #ffffff;
+  background: #192734;
 }
 
 .partners .partner-image {
@@ -601,17 +653,17 @@
 }
 
 .partners .partner-image:last-child {
-  background: #ffffff;
+  background: #192734;
 }
 
 .review {
   padding: 120px 0 80px;
-  background: #ffffff;
+  background: #192734;
   color: #fff;
 }
 
 .review .review-form {
-  border: 1px solid #111111;
+  border: 1px solid #771f1f;
   padding: 30px 40px 39px;
   margin-top: 40px;
 }
@@ -633,19 +685,19 @@
   bottom: -24px;
   width: 100%;
   height: 1px;
-  background: #ffffff;
+  background: #192734;
 }
 
 @media screen and (min-width: 760px) {
   .single-review {
-    border: 2px solid #ffffff;
+    border: 2px solid #192734;
     margin: 20px 0px;
     padding: 10px;
   }
   .single-review .user-img {
     width: 150px;
     border-radius: 20%;
-    border: #111111 1px solid;
+    border: #771f1f 1px solid;
     margin-right: 30px;
   }
   .single-review .user-review {
@@ -666,15 +718,21 @@
 }
 
 .faq {
-  background: #ffffff;
-  color: #111111;
   min-height: 70vh;
   padding: 30px 0;
 }
 
+.faq .accordion.card.card-header {
+  font-size: 600px !important;
+}
+
 .faq .accordion-card {
-  background: #ffffff;
-  color: #111111;
+  background: #192734;
+  color: #fff;
+}
+
+.faq .accordion-card .accordion-card-headers {
+  background: wheat;
 }
 
 .faq .acc-toggle {
@@ -683,7 +741,7 @@
 }
 
 .steps {
-  background: #ffffff;
+  background: #192734;
   position: relative;
   z-index: 2;
   min-height: 70vh;
@@ -700,7 +758,7 @@
 }
 
 .steps .steps-content p {
-  color: #111111;
+  color: #fff;
   font-size: 16px;
   line-height: 26px;
   display: inline-block;
@@ -710,7 +768,7 @@
 .steps .steps-content h1 {
   font-size: 24px;
   font-weight: 600;
-  color: #111111;
+  color: #fff;
   text-transform: capitalize;
   margin-bottom: 19px;
   margin-top: -14px;

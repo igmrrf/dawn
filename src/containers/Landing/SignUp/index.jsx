@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../../../components/Landing/Header/Header";
-import Register from "../../../components/Landing/Register/Register";
-import Footer from "../../../components/Landing/Footer/Footer";
+import Footer from "../../../components/Landing/Footer";
+import Navigation from "../../../components/Landing/Header";
+import SignUp from "../../../components/Landing/SignUp";
 
-const RegisterPage = props => {
-  console.log(props);
+const RegisterPage = (props) => {
   return (
     <>
-      <Header />
-      <Register prop={props.match.params.id} />
+      <Navigation />
+      <SignUp />
       <Footer />
     </>
   );

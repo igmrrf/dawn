@@ -1,36 +1,36 @@
 .calculate-profit {
-	padding: 120px 0;
- background: $primary-background;
-	position: relative;
-	z-index: 2;
-	.calculate-area {
-		width: 100%;
+  padding: 120px 0;
+  background: $primary-background;
+  position: relative;
+  z-index: 2;
+  .calculate-area {
+    width: 100%;
 
-		form {
-			.form-group {
-				margin-bottom: 0;
-				.form-control {
-					 background: $primary-background;
-					height: 50px;
-					padding: 0 30px;
-					border-radius: 50px;
-					border-color: $brown-color;
-				color: set-text-color($primary-background);
-					font-size: 15px;
-					appearance: none;
-				}
-			}
-			button {
-				height: 50px;
-				border: 1px solid $brown-color;
-			 background: $primary-background;
-			color: set-text-color($primary-background);
-				border-radius: 50px;
-				width: 100%;
-				@include easeOut;
-				cursor: pointer;
-				outline: none;
-			}
-		}
-	}
+    form {
+      .form-group {
+        margin-bottom: 0;
+        .form-control {
+          background: $primary-background;
+          height: 50px;
+          padding: 0 30px;
+          border-radius: 50px;
+          border-color: $brown;
+          color: set-text-color($primary-background);
+          font-size: 15px;
+          appearance: none;
+        }
+      }
+      button {
+        height: 50px;
+        border: 1px solid $brown;
+        background: $primary-background;
+        color: set-text-color($primary-background);
+        border-radius: 50px;
+        width: 100%;
+        @include easeOut;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
 }

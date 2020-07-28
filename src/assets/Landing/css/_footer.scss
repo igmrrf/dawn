@@ -1,10 +1,10 @@
 .footer {
-  background: $tertiary-background;
+  background: $primary-background;
   .copyright {
     text-align: center;
     margin: 0;
     padding: 17px 0 18px;
-    color: set-text-color($tertiary-background);
+    color: $white;
     font-size: 16px;
     opacity: 0.8;
     line-height: 1.6;

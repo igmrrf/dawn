@@ -7,7 +7,7 @@
       text-align: center;
       padding: 54px 0 33px;
       position: relative;
-      border-bottom: 5px solid $white-color;
+      border-bottom: 5px solid $white;
       .part-img {
         width: 100px;
         display: inline-block;
@@ -15,11 +15,11 @@
         margin-bottom: 26px;
         font-size: 150px;
         svg {
-          color: $tertiary-color;
+          color: $blue;
         }
       }
       .part-text {
-        color: $primary-color;
+        color: $white;
         span {
           display: block;
         }

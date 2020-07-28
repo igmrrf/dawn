@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Header from "../../../components/Landing/Header/Header";
-import Message from "../../../components/Landing/Message/Message";
-import Footer from "../../../components/Landing/Footer/Footer";
+import React from "react";
+import Contact from "../../../components/Landing/Contact";
+import Navigation from "../../../components/Landing/Header";
+import Footer from "../../../components/Landing/Footer";
 
-export default class Contact extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-				<Message />
-				<Footer />
-			</div>
-		);
-	}
-}
+const VerifyPage = () => {
+  return (
+    <div>
+      <Navigation />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
+export default VerifyPage;

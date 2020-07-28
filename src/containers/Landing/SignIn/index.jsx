@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Header from "../../../components/Landing/Header/Header";
-import Login from "../../../components/Landing/Login/Login";
-import Footer from "../../../components/Landing/Footer/Footer";
+import React from "react";
+import Footer from "../../../components/Landing/Footer";
+import Navigation from "../../../components/Landing/Header";
+import SignIn from "../../../components/Landing/Login";
 
-export default class LoginPage extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Login />
-        <Footer />
-      </div>
-    );
-  }
-}
+const LoginPage = () => {
+  return (
+    <div>
+      <Navigation />
+      <SignIn />
+      <Footer />
+    </div>
+  );
+};
+export default LoginPage;

@@ -1,22 +1,14 @@
 .banner {
   position: relative;
-  min-height: 100vh;
-  padding-top: 15vh;
-  padding-bottom: 5vh;
-  background: url(../img/new/bg.jpg);
-
   .banner-content {
     text-align: center;
-    margin: 20px 0;
-    padding: 0 50px;
     background: url(../img/new/bg.jpg);
-    clip-path: circle(100vw at center);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $primary-color;
+    color: $white;
     .part-text {
       width: 50vw;
     }
@@ -35,8 +27,13 @@
       margin-top: -14px;
     }
     .banner-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       a {
-        @include brownBtn();
+        @include blueBtn();
+        margin: 20px 20px;
       }
     }
   }

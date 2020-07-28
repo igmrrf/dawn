@@ -57,7 +57,7 @@
 	}
 	.withdraw {
 		padding: 0 10px;
-		background: $secondary-color;
+		background: $primary-background;
 		border-radius: 5px;
 		.nav-link {
 			color: set-text-color($primary-background);
@@ -90,7 +90,7 @@
 			padding: 10px 0;
 			margin: 10px 0;
 			padding-left: 10px;
-			border-left: 2px solid $white-color;
+			border-left: 2px solid $white;
 			background: radial-gradient(rgb(77, 71, 155), rgb(37, 41, 77));
 			&:hover {
 				box-shadow: 2px 2px 2px 2px rgb(71, 197, 255);

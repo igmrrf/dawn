@@ -1,21 +1,22 @@
 .about {
-	padding: 120px 0;
- background: $primary-background;
-	min-height: 70vh;
-	.part-img {
-		height: 100%;
-	}
-	.part-text {
-		color: set-text-color($primary-background);
-
-		.text {
-			display: block;
-			width: 100%;
-		color: set-text-color($primary-background);
-			height: 50vh;
-			overflow-y: hidden;
-			white-space: normal;
-			text-overflow: ellipsis;
-		}
-	}
+  padding: 120px 0;
+  background: $white;
+  min-height: 70vh;
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 100%;
+    }
+  }
+  .part-text {
+    color: $black;
+    .text {
+      width: 100%;
+      height: 50vh;
+      overflow-y: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+    }
+  }
 }

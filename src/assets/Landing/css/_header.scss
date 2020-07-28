@@ -1,12 +1,13 @@
 .header {
-  position: fixed;
-  width: 100vw;
+  position: static;
+  top: 0;
+  width: 99vw;
   z-index: 999;
   background: $primary-background;
   .logo {
     h2 {
-      font-size: 2.5em;
-      background: $tertiary-color;
+      font-size: calc(1.5rem + 2vw);
+      background: $blue;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -14,8 +15,12 @@
   }
   .navbar-light {
     .navbar-toggler {
+      transform: scale(0.8);
+
+      width: 15%;
+      height: 35px;
       border: none;
-      background: $tertiary-color;
+      background: $blue;
       background-clip: text;
       -webkit-background-clip: border-box;
       -webkit-text-fill-color: transparent;

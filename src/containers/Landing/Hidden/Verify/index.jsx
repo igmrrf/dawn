@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Header from "../../../../components/Landing/Header/Header";
+import React from "react";
 import Verify from "../../../../components/Landing/Hidden/Verify";
-import Footer from "../../../../components/Landing/Footer/Footer";
+import Navigation from "../../../../components/Landing/Header";
+import Footer from "../../../../components/Landing/Footer";
 
-export default class LoginPage extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-				<Verify />
-				<Footer />
-			</div>
-		);
-	}
-}
+const VerifyPage = () => {
+  return (
+    <div>
+      <Navigation />
+      <Verify />
+      <Footer />
+    </div>
+  );
+};
+export default VerifyPage;

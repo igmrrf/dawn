@@ -6,8 +6,9 @@
     border-radius: 10px;
     margin-bottom: 30px;
     padding-bottom: 15px;
-    background: $tertiary-background;
+    background: $blue;
     @include easeOut;
+    box-shadow: 0 0 20px $dark;
 
     h3 {
       font-size: 22px;
@@ -25,11 +26,10 @@
         margin-bottom: -5px;
       }
     }
-
     .glowBtn {
       @include glowBtn;
       a {
-        color: $tertiary-color;
+        color: $blue;
       }
     }
   }

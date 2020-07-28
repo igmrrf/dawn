@@ -1,51 +1,51 @@
 .review {
-	padding: 120px 0 80px;
-	background: $primary-background;
-	color: $white-color;
+  padding: 120px 0 80px;
+  background: $primary-background;
+  color: $white;
 
-	.review-form {
-		border: 1px solid $secondary-color;
-		padding: 30px 40px 39px;
-		margin-top: 40px;
+  .review-form {
+    border: 1px solid $brown;
+    padding: 30px 40px 39px;
+    margin-top: 40px;
 
-		.title {
-			font-size: 28px;
-			color: $white-color;
-			font-weight: 700;
-			margin: 0;
-			margin-bottom: 28px;
-			position: relative;
-			display: inline-block;
-			&::after {
-				position: absolute;
-				content: "";
-				left: 0;
-				bottom: -24px;
-				width: 100%;
-				height: 1px;
-			 background: $primary-background;
-			}
-		}
-	}
+    .title {
+      font-size: 28px;
+      color: $white;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 28px;
+      position: relative;
+      display: inline-block;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -24px;
+        width: 100%;
+        height: 1px;
+        background: $primary-background;
+      }
+    }
+  }
 }
 @media screen and (min-width: 760px) {
-	.single-review {
-		border: 2px solid $primary-color;
-		margin: 20px 0px;
-		padding: 10px;
-		.user-img {
-			width: 150px;
-			border-radius: 20%;
-			border: $secondary-color 1px solid;
-			margin-right: 30px;
-		}
-		.user-review {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			.user-info {
-				font-weight: 400;
-			}
-		}
-	}
+  .single-review {
+    border: 2px solid $primary-background;
+    margin: 20px 0px;
+    padding: 10px;
+    .user-img {
+      width: 150px;
+      border-radius: 20%;
+      border: $brown 1px solid;
+      margin-right: 30px;
+    }
+    .user-review {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .user-info {
+        font-weight: 400;
+      }
+    }
+  }
 }
