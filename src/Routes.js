@@ -9,17 +9,16 @@ import AOS from "aos";
 import "../node_modules/aos/dist/aos.css";
 
 //Landing Page Imports
-import {
-  About,
-  Contact,
-  Home,
-  SignIn,
-  SignUp,
-  Privacy,
-  Recover,
-  Verify,
-  Markets,
-} from "./containers/Landing";
+import About from "./containers/Landing/About";
+import Contact from "./containers/Landing/Contact";
+import Home from "./containers/Landing/Contact";
+import SignIn from "./containers/Landing/Contact";
+import SignUp from "./containers/Landing/Contact";
+import Privacy from "./containers/Landing/Contact";
+import Recover from "./containers/Landing/Contact";
+import Verify from "./containers/Landing/Contact";
+import Markets from "./containers/Landing/Contact";
+
 //Account Imports
 import Dashboard from "./containers/Account/Dashboard/DashboardPage";
 import Withdrawal from "./containers/Account/Withdrawal/WithdrawalPage";

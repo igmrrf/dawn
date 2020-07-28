@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Navigation from "../../../components/Account/Navigation/Navigation";
 import Footer from "../../../components/Account/Navigation/Footer";
-import Chart from "../../../components/Landing/Widgets/CryptoUpdate";
+import Chart from "../../../components/Landing/Widgets/Crypt";
 import API from "../../../helpers/API";
 
 export class WalletPage extends Component {
