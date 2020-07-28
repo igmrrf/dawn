@@ -11,13 +11,13 @@ import "../node_modules/aos/dist/aos.css";
 //Landing Page Imports
 import About from "./containers/Landing/About";
 import Contact from "./containers/Landing/Contact";
-import Home from "./containers/Landing/Contact";
-import SignIn from "./containers/Landing/Contact";
-import SignUp from "./containers/Landing/Contact";
-import Privacy from "./containers/Landing/Contact";
-import Recover from "./containers/Landing/Contact";
-import Verify from "./containers/Landing/Contact";
-import Markets from "./containers/Landing/Contact";
+import Home from "./containers/Landing/Home";
+import SignIn from "./containers/Landing/SignIn";
+import SignUp from "./containers/Landing/SignUp";
+import Privacy from "./containers/Landing/Hidden/Privacy";
+import Recover from "./containers/Landing/Hidden/Recover";
+import Verify from "./containers/Landing/Hidden/Verify";
+import Markets from "./containers/Landing/Markets";
 
 //Account Imports
 import Dashboard from "./containers/Account/Dashboard/DashboardPage";
@@ -50,12 +50,12 @@ class Routes extends Component {
           <Switch>
             {/* //Landing Page Routes */}
             <Route exact path="/" component={Home} />
-            <Route path="/sign_up/:id" component={SignUp} />
-            <Route path="/sign_up" component={SignUp} />
-            <Route exact path="/sign_in" component={SignIn} />
-            <Route exact path="/contact_us" component={Contact} />
+            <Route path="/sign-up/:id" component={SignUp} />
+            <Route path="/sign-up" component={SignUp} />
+            <Route exact path="/sign-in" component={SignIn} />
+            <Route exact path="/contact-us" component={Contact} />
             <Route exact path="/markets" component={Markets} />
-            <Route exact path="/about_us" component={About} />
+            <Route exact path="/about-us" component={About} />
             {/* //Account Routes */}
             <Route exact path="/account/dashboard" component={Dashboard} />
             <Route exact path="/account/deposit" component={Deposit} />

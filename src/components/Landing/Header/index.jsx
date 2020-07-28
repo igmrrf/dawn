@@ -20,7 +20,7 @@ const Header = () => {
                     </Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className="nav-link" href="/about_us">
+                    <Nav.Link className="nav-link" href="/about-us">
                       About Us
                     </Nav.Link>
                   </li>
@@ -30,17 +30,17 @@ const Header = () => {
                     </Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className="nav-link" href="/contact_us">
+                    <Nav.Link className="nav-link" href="/contact-us">
                       Contact Us
                     </Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link href="/sign_in" className="nav-link">
+                    <Nav.Link href="/sign-in" className="nav-link">
                       Sign In
                     </Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link href="/sign_up" className="nav-link">
+                    <Nav.Link href="/sign-up" className="nav-link">
                       Sign Up
                     </Nav.Link>
                   </li>
